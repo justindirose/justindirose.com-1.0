@@ -1,0 +1,83 @@
+%a {
+	color: $light-color;
+	text-decoration: none;
+}
+#primary-header {
+	width: 100%;		
+	background-color: $dark-color;
+	border-bottom: 2px solid $highlight-color;
+	#top-bar {
+		@include clearfix;
+	}
+	
+	#logo {
+		@include row;
+		text-align: center;
+		margin: 0;
+		padding-top: 20px;
+		a {
+			@extend %a;
+			text-decoration: none;
+		}
+		@include media($lg-breakpoint) {
+			@include span-columns(4);
+			text-align: left;
+		}
+	}
+
+	@import 'nav';
+
+}
+
+#secondary-header {
+	background-color: $primary-color;
+	border-bottom: 2px solid $highlight-color;
+	padding: 50px 0;
+	@include clearfix;
+
+	img {
+		@include row;
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		@include media($med-breakpoint) {
+			width: 50%;
+		}
+		@include media($lg-breakpoint) {
+			@include span-columns(5);
+		}
+	}
+	.header-text {
+		@include row;
+		color: $light-color;		
+		text-align: center;
+		margin: 50px 0 0 0;
+		@include media($med-breakpoint) {
+			width: 80%;
+			margin: 50px auto;
+		}
+		@include media($lg-breakpoint) {
+			@include span-columns(7);
+			margin: 12.5% 0 0 0;
+			padding-left: 25px;
+		}
+		h2 {
+			line-height: 1.125em;
+
+		}
+		.header-cta-button {
+			max-width: 225px;
+			margin-top: 25px;
+			@include media($lg-breakpoint) {
+				width: 225px;
+				display: block;
+				margin: 25px auto;
+			}		
+		}
+	}
+
+}
+
+
+
+

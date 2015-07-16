@@ -1,0 +1,13 @@
+$primary-color: #268C3F;
+$shade-color: #0a6621;
+$highlight-color: #53a668;
+$dark-color: #363636;
+$light-color: #F5F5F5;
+
+$sans-serif: 'PT Sans', Arial, sans-serif;
+$serif: 'PT Serif', Georgia, serif;
+
+$sm-breakpoint: new-breakpoint(min-width 320px 12);
+$med-breakpoint: new-breakpoint(min-width 768px 12);
+$lg-breakpoint: new-breakpoint(min-width 1024px 12);
+/* $xlg-breakpoint: new-breakpoint(min-width 1024px 12); */

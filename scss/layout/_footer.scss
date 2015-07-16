@@ -1,0 +1,44 @@
+//@include sticky-footer(180px, 'main', '.wrapper', '#primary-footer');
+#primary-footer {
+	@include row;
+	background-color: $dark-color;
+	color: $light-color;
+	border-top: 2px solid $highlight-color;
+	font-family: $sans-serif;
+
+
+	.footer-section {
+		@include row;
+		padding: 25px;
+
+		h2 {
+			font-size: 1em;
+			line-height: 1.125em;
+		}
+
+		img {
+			width: 35px;
+			margin: 15px 5px; 
+		}
+
+		.copyright {
+			font-size: .85em;
+			margin: 0;
+		}
+		a {
+			color: $light-color;
+		}
+		a:hover {
+			color: $highlight-color;
+		}
+		@include media($med-breakpoint) {
+			@include span-columns(6);
+			padding: 25px;
+		}
+		@include media($lg-breakpoint) {
+			@include span-columns(4);
+			padding: 25px 0;
+		}
+	}
+
+}

@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+}
+a, a:linked {
+	color: $primary-color;
+}
+a:hover {
+	color: $highlight-color;
+}
+a:visited {
+	color: $shade-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.25em;
+}

@@ -1,0 +1,45 @@
+main {
+	@include row;
+	color: $dark-color;
+	padding: 0 25px;
+
+	@include media($lg-breakpoint) {
+		padding: 0;
+	}
+	h1 a, h1 a:visited, h1 a:hover {
+		color: $dark-color;
+		text-decoration: none;
+	}
+	article {
+		@include row;
+		margin-bottom: 25px;
+	}
+	p {
+		margin: 25px 0;
+	}
+	ul {
+		list-style-type: circle;
+	}
+	ol {
+		list-style-type: decimal;
+	}
+	ul, ol {
+		margin-left: 25px;
+	}
+	blockquote {
+		border-left: 5px solid $shade-color;
+		background-color: $highlight-color;
+		font-family: $sans-serif;
+		font-weight: 700;
+		line-height: 1.5em;
+		color: $light-color;
+		margin: 25px 0;
+		padding: 5px 25px;
+	}
+	pre, code { 
+		font-family: "Courier New", Courier, monospace;
+    }
+
+
+
+}
